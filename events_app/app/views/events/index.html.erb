@@ -1,0 +1,23 @@
+<h1>All Events</h1>
+<% @events.each do |event| %>
+<div class="events">
+  <strong><%= event.event_name %></strong>
+    <p><%= event.date %></p>
+    
+    <div class= "meta">
+      <%= link_to 'Show', event %>
+      <span class="admin"> 
+        <%= link_to 'Edit', edit_event_path(event) %> |
+        <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      </span>
+      
+    </div>
+</div>      
+    <% end %>
+  
+
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>

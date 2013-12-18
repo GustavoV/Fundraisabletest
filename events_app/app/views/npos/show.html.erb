@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @npo.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @npo.address %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @npo.type %>
+</p>
+
+<%= link_to 'Edit', edit_npo_path(@npo) %> |
+<%= link_to 'Back', npos_path %>

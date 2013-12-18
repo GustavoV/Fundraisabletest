@@ -1,0 +1,10 @@
+@import 'bootstrap';
+
+body {background: transparent url("http://openwalls.com/image/14243/business_people_1920x1200.jpg") no-repeat;
+background-size: 100%; }
+
+.table-striped tbody > tr:nth-child(odd) {background-color:#f9f9f9}
+
+.welcomeHeader {
+	position: center
+}
